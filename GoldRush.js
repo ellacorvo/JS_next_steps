@@ -21,10 +21,5 @@ $(document).ready(function(){
 		// console.log('test');
 	});
 	
-	// $('.container').click(function() {
-	// 	$(this).remove();
-	// 	console.log('test');
-	// });
-
   		
 });
