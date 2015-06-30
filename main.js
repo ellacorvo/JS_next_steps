@@ -53,6 +53,8 @@
 // }
 // console.log(totalLetters());
 
+
+
 // var whatCity = {};
 // var keyValue = function(city, name) {
 // 	whatCity[city] = name;
@@ -60,18 +62,31 @@
 // }
 // console.log(keyValue("city", "Denver"));
 
-var letters = ['a', 'b', 'c', 'd', 'e'];
-var names = ['jerry', 'sarah', 'sally'];
-var negativeIndex = function(array, number) {
-	var positive = number * -1;
-	var n = array.length - positive;
-	return array[n];
+
+
+// var letters = ['a', 'b', 'c', 'd', 'e'];
+// var names = ['jerry', 'sarah', 'sally'];
+// var negativeIndex = function(array, number) {
+// 	var positive = number * -1;
+// 	var n = array.length - positive;
+// 	return array[n];
+// }
+// console.log(negativeIndex(names, -1));
+
+
+var removeM = function(string) {
+	var eachLetter = string.split("");
+		for (i=0; i<eachLetter.length; i++) {
+			if ([i] === 'm' || [i] === 'M') {
+				result = "";
+			}
+			else {
+				result = [i];
+			}
+		}
+		return result;
 }
-console.log(negativeIndex(names, -1));
-
-
-
-
+console.log(removeM('family'));
 
 
 

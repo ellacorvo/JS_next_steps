@@ -1,25 +1,27 @@
 $(document).ready(function(){
 
-	$('body').on( "click", function(event) {
+	$('.map-img').on( "click", function(event) {
   		var coordinatesX = event.pageX;
   		var coordinatesY = event.pageY;
 
-  	 	console.log(
-    	    "pageX/Y: " +
-    	    event.pageX + ", " +
-    	    event.pageY
-        );
+// ......display coordinates of area clicked on colsole log to be sure it's working as expected
 
-  		$('body').append('<div class="container"><img class="marker" src="http://sr.photos3.fotosearch.com/bthumb/CSP/CSP666/k6660545.jpg"></div>');
+  	 	// console.log(
+    	//     "pageX/Y: " +
+    	//     event.pageX + ", " +
+    	//     event.pageY
+     //    );
+//............................................
+
+  		$('body').append('<div class="container"><img class="marker" src="https://files.slack.com/files-pri/T068NB2KC-F0701A2LT/marker.png"></div>');
 		
 		$('.container').last().css({ 'top' : coordinatesY , 'left' : coordinatesX });
 
-	});
-
-	$('body').on('click', '.container', function() {
-		$(this).remove();
-		// console.log('test');
-	});
 	
+
+			$('body').on('click', '.container', function( event ) {
+				$(this).remove()
+			});
+	});
   		
 });
