@@ -1,4 +1,4 @@
-//.........Loops Practice #2..........//
+// .........Loops Practice #2..........
 
 // var animals = ['rat', 'cat', 'butterfly', 'marmot', 'ocelot'];
 
@@ -33,7 +33,7 @@
 // }
 
 
-//.......Functions Practice #2........//
+//.......Functions Practice #2........
 
 // var person = {
 // 	name : 'Louisa',
@@ -63,7 +63,6 @@
 // console.log(keyValue("city", "Denver"));
 
 
-
 // var letters = ['a', 'b', 'c', 'd', 'e'];
 // var names = ['jerry', 'sarah', 'sally'];
 // var negativeIndex = function(array, number) {
@@ -74,19 +73,31 @@
 // console.log(negativeIndex(names, -1));
 
 
-var removeM = function(string) {
-	var eachLetter = string.split("");
-		for (i=0; i<eachLetter.length; i++) {
-			if ([i] === 'm' || [i] === 'M') {
-				result = "";
-			}
-			else {
-				result = [i];
-			}
-		}
-		return result;
+// var removeM = function(string) {
+// 	var eachLetter = string.split("");
+// 	for (i=0; i<eachLetter.length; i++) {
+// 		if (eachLetter[i] === 'm' || eachLetter[i] === 'M') {
+// 			eachLetter.splice(i,1);
+// 		}
+// 	}
+// 	return eachLetter.join('');
+// }
+// console.log(removeM('family'));
+
+
+var pairs1 = { a: 10, b: 20, c: 30 };
+var pairs2 = { firstName: 'pork', lastName: 'chops' }
+var printObject = function(object) {
+	for (var prop in object) {
+  		console.log( prop + " is " + object[prop]);
+	}
 }
-console.log(removeM('family'));
+printObject(pairs1);
+
+
+
+
+
 
 
 
