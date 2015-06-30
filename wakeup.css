@@ -35,7 +35,12 @@ body {
 .left-labels {
 	background-color: white;
 	padding: 10px;
-	float: left;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	text-align: center;
 }
 
 .clock-screen {
@@ -55,9 +60,18 @@ body {
 
 .clock-text {
 	color: red;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100px;
+	font-size: 45px;
 }
 
 .bottom-labels {
 	background-color: white;
 	padding: 10px;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
 }

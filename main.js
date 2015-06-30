@@ -85,19 +85,47 @@
 // console.log(removeM('family'));
 
 
-var pairs1 = { a: 10, b: 20, c: 30 };
-var pairs2 = { firstName: 'pork', lastName: 'chops' }
-var printObject = function(object) {
-	for (var prop in object) {
-  		console.log( prop + " is " + object[prop]);
-	}
+// var pairs1 = { a: 10, b: 20, c: 30 };
+// var pairs2 = { firstName: 'pork', lastName: 'chops' }
+// var printObject = function(object) {
+// 	for (var prop in object) {
+//   		console.log( prop + " is " + object[prop]);
+// 	}
+// }
+// printObject(pairs1);
+
+
+//..........Loops Practice #3...........
+
+var students = [{
+ name: 'Liz',
+ age: 25,
+ city: 'Boulder'
+},{
+ name: 'Meghan',
+ age: 27,
+ city: 'Denver'
+},{
+ name: 'Trent',
+ age: 32,
+ city: 'Boulder'
+},{
+ name: 'Chelsea',
+ age: 24,
+ city: 'Boulder'
+},{
+ name: 'Amir',
+ age: 18,
+ city: 'Denver'
+}];
+
+// for(var i=0; i<students.length; i++) {
+//  console.log(students[i].name);
+// }
+
+for(var i=0; i<students.length; i++) {
+ console.log(students[i].age);
 }
-printObject(pairs1);
-
-
-
-
-
 
 
 
