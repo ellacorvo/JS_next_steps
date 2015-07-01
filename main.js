@@ -70,7 +70,7 @@
 // 	var n = array.length - positive;
 // 	return array[n];
 // }
-// console.log(negativeIndex(names, -1));
+// console.log(negativeIndex(names, -3));
 
 
 // var removeM = function(string) {
@@ -93,6 +93,67 @@
 // 	}
 // }
 // printObject(pairs1);
+
+// var vowels = function(string) {
+// 	var vowel = string.split("");
+// 	var result = vowel.filter(function(vowel) {
+// 		if (vowel === 'a' || vowel === 'e' || vowel === 'i' || vowel === 'o' || vowel === 'u') {
+//         return true;
+//     	}
+//     	else {
+//         return false;
+//    		}
+//    	})
+// 	return result;
+// }
+// console.log(vowels('what evil odd ducks!'));
+
+
+// var evalTrue = ['a', 'a', 'b', 'b', 'c', 'c'];
+// var evalFalse = ['a', 'a', 'b', 'c', 'd', 'd']
+// var twins = function (array) {
+// 	var n = array.length;
+// 	for (i=0; i<n; i++) {
+// 		for (j=i+1; j<n; j++) {              
+// 			if (array[i]==array[j])
+// 				return true;
+// 		}
+// 	}
+// }
+// console.log(twins(evalFalse));
+
+// var boolTrue = [false, false, true, false];
+// var boolFalse = [false, false, false];
+// var boolEmpty = [];
+// var or = function (array) {
+// 	var result = array.filter(function(array) {
+// 		if (array === true) {
+//         return true;
+//     	}
+//     	else {
+//         return false;
+//    		}
+//    	})
+// 	return result;
+// }
+// console.log(or(boolTrue));
+
+var names = ['todd', 'avery', 'maria', 'avery'];
+var letters = ['a', 'b', 'a', 'c', 'd', 'd'];
+
+var unique = function (array) {
+	for (i=0; i<array.length; i++) {                  
+		for (j=i+1; j<array.length; j++) {              
+			if (array[i]==array[j]) {
+				array.splice(i, 1);
+			}	
+		}
+	}
+	return array;
+}
+console.log(unique(names));
+
+
 
 
 //..........Loops Practice #3...........
