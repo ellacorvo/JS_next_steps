@@ -110,13 +110,14 @@
 
 
 // var evalTrue = ['a', 'a', 'b', 'b', 'c', 'c'];
-// var evalFalse = ['a', 'a', 'b', 'c', 'd', 'd']
+// var evalFalse = ['a', 'a', 'b', 'c', 'd', 'd'];
+
 // var twins = function (array) {
 // 	var n = array.length;
 // 	for (i=0; i<n; i++) {
 // 		for (j=i+1; j<n; j++) {              
 // 			if (array[i]==array[j])
-// 				return true;
+// 				return true
 // 		}
 // 	}
 // }
@@ -125,6 +126,7 @@
 // var boolTrue = [false, false, true, false];
 // var boolFalse = [false, false, false];
 // var boolEmpty = [];
+
 // var or = function (array) {
 // 	var result = array.filter(function(array) {
 // 		if (array === true) {
@@ -138,21 +140,19 @@
 // }
 // console.log(or(boolTrue));
 
-var names = ['todd', 'avery', 'maria', 'avery'];
-var letters = ['a', 'b', 'a', 'c', 'd', 'd'];
-
-var unique = function (array) {
-	for (i=0; i<array.length; i++) {                  
-		for (j=i+1; j<array.length; j++) {              
-			if (array[i]==array[j]) {
-				array.splice(i, 1);
-			}	
-		}
-	}
-	return array;
-}
-console.log(unique(names));
-
+// var names = ['todd', 'avery', 'maria', 'avery'];
+// var letters = ['a', 'b', 'a', 'c', 'd', 'd'];
+// var unique = function (array) {
+// 	for (i=0; i<array.length; i++) {                  
+// 		for (j=i+1; j<array.length; j++) {              
+// 			if (array[i]==array[j]) {
+// 				array.splice(i, 1);
+// 			}	
+// 		}
+// 	}
+// 	return array;
+// }
+// console.log(unique(names));
 
 
 
@@ -203,6 +203,31 @@ console.log(unique(names));
 //  	console.log(students[i].name + " is older than 25");
 //  	}
 // }
+
+//....................Problem Set #2.................//
+
+
+// var firstReverse = function(string) {
+// 	var eachLetter = string.split("").reverse().join('');
+// 	return eachLetter;
+// }
+// console.log(firstReverse("bargains"));
+
+var swapcase = function(string) {
+	var newString = "";
+		for (var i=0; i<string.length; i++){
+			if (string[i] === string[i].toUpperCase()) {
+				newString += string[i].toLowerCase();
+			}
+			else {
+				newString += string[i].toUpperCase();
+			}
+		}
+	return newString;
+}
+console.log(swapcase("Hello World!"));
+
+
 
 
 
