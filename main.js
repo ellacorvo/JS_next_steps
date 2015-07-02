@@ -107,19 +107,20 @@
 // 	return result;
 // }
 // console.log(vowels('what evil odd ducks!'));
+// console.log(vowels('alabama'));
 
 
 var evalTrue = ['a', 'a', 'b', 'b', 'c', 'c'];
 var evalFalse = ['a', 'a', 'b', 'c', 'd', 'd'];
 
 var twins = function (array) {
-	var n = array.length;
-	for (i=0; i<n; i++) {
-		for (j=i+1; j<n; j++) {              
-			if (array[i]==array[j])
-				return true
+	var sorted = array.sort();
+	for (var i=0; i<array.length; i+=2) {                              
+			if (sorted[i + 1] != sorted[i]) {
+				return false;
+			}	
 		}
-	}
+	return true;
 }
 console.log(twins(evalFalse));
 
@@ -159,7 +160,7 @@ console.log(twins(evalFalse));
 
 
 
-//..........Loops Practice #3...........
+// ..........Loops Practice #3...........
 
 // var students = [{
 //  name: 'Liz',
@@ -211,7 +212,7 @@ console.log(twins(evalFalse));
 
 
 // var firstReverse = function(string) {
-// 	var eachLetter = string.split("").reverse().join('');
+// 	var eachLetter = string.split('').reverse().join('');
 // 	return eachLetter;
 // }
 // console.log(firstReverse("bargains"));
