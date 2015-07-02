@@ -109,36 +109,39 @@
 // console.log(vowels('what evil odd ducks!'));
 
 
-// var evalTrue = ['a', 'a', 'b', 'b', 'c', 'c'];
-// var evalFalse = ['a', 'a', 'b', 'c', 'd', 'd'];
+var evalTrue = ['a', 'a', 'b', 'b', 'c', 'c'];
+var evalFalse = ['a', 'a', 'b', 'c', 'd', 'd'];
 
-// var twins = function (array) {
-// 	var n = array.length;
-// 	for (i=0; i<n; i++) {
-// 		for (j=i+1; j<n; j++) {              
-// 			if (array[i]==array[j])
-// 				return true
-// 		}
-// 	}
-// }
-// console.log(twins(evalFalse));
+var twins = function (array) {
+	var n = array.length;
+	for (i=0; i<n; i++) {
+		for (j=i+1; j<n; j++) {              
+			if (array[i]==array[j])
+				return true
+		}
+	}
+}
+console.log(twins(evalFalse));
 
 // var boolTrue = [false, false, true, false];
 // var boolFalse = [false, false, false];
 // var boolEmpty = [];
 
 // var or = function (array) {
-// 	var result = array.filter(function(array) {
-// 		if (array === true) {
-//         return true;
-//     	}
-//     	else {
-//         return false;
-//    		}
-//    	})
-// 	return result;
+// 	if (array.length > 0) {
+// 		for (i=0; i<array.length; i++) { 
+// 			if (array[i] === true) {
+// 	        	return true;
+// 	        	break;
+// 	    	}
+// 	   	}
+// 	   	return false;
+// 	}
+// 	else {
+// 		return false;
+// 	}
 // }
-// console.log(or(boolTrue));
+// console.log(or(boolFalse));
 
 // var names = ['todd', 'avery', 'maria', 'avery'];
 // var letters = ['a', 'b', 'a', 'c', 'd', 'd'];
@@ -213,19 +216,19 @@
 // }
 // console.log(firstReverse("bargains"));
 
-var swapcase = function(string) {
-	var newString = "";
-		for (var i=0; i<string.length; i++){
-			if (string[i] === string[i].toUpperCase()) {
-				newString += string[i].toLowerCase();
-			}
-			else {
-				newString += string[i].toUpperCase();
-			}
-		}
-	return newString;
-}
-console.log(swapcase("Hello World!"));
+// var swapcase = function(string) {
+// 	var newString = "";
+// 		for (var i=0; i<string.length; i++){
+// 			if (string[i] === string[i].toUpperCase()) {
+// 				newString += string[i].toLowerCase();
+// 			}
+// 			else {
+// 				newString += string[i].toUpperCase();
+// 			}
+// 		}
+// 	return newString;
+// }
+// console.log(swapcase("Hello World!"));
 
 
 
